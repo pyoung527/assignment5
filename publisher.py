@@ -2,13 +2,9 @@
 COMP-216 SEC.004 W22 
 Assignment5
 Group 7
-Members = [
+@author = [
     Young Park,
-    Aileen Nicole Alapan,
-    Richie Hickey,
-    Oscar Quispe Guanoluisa,
-    Minusha Shaik
-    ]    
+        ]    
 '''
 
 import generator
@@ -53,7 +49,7 @@ client.on_publish = on_publish
 client.connect(broker, 1883)
 client.loop_start()
 
-for i in range(5):
+for i in range(3):
     numpyData = {"array": generator.generator()}
     encodedNumpyData = json.dumps(numpyData, cls=NumpyArrayEncoder)
     client.publish(topic, encodedNumpyData)

@@ -1,7 +1,10 @@
 '''
-@author: [
-    Young Park
-]
+COMP-216 SEC.004 W22 
+Assignment5
+Group 7
+@author = [
+    Young Park,
+        ]    
 '''
 import time
 import numpy as np
